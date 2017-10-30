@@ -65,6 +65,7 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
    Buat script menggunakan python untuk mengendalikan servo \(e.g. servobuka.py dan servotutup.py, dengan perubahan sudut yang digunakan untuk pintu garasi 90°\).
 
 4. Buat script menggunakan python untuk mengendalikan lampu led \(e.g. lampu1nyala.py dan lampu1mati.py\).
+
 5. Masukkan command yang diinginkan sesuai dengan kebutuhan ke script API Telegram.
 
 ### Step
