@@ -11,13 +11,14 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
 * Telegram bot \(click here how to get Telegram bot\)
 * Servo
 * Raspberry pi 2
-* Board
+* LED lamp
+* Breadboard
 * Jumper wires
-* Miniatur rumah
+* Miniature house
 
 ### Installations
 
-#### Telegram Bot
+#### _Telegram Bot_
 
 1. Setelah install aplikasi Telegram di perangkat \(Smartphone/PC/Laptop/WebApp\) Anda, bisa langsung login ke akun Telegram Anda atau jika belum memiliki akun Telegram bisa juga mendaftarkan akun baru.
 2. Cari "@BotFather" tanpa tanda petik pada _search bar_ aplikasi Telegram.
@@ -43,13 +44,33 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
 3. Pilih bot yang akan diatur perintahnya.
    ![Screenshot 7](/images/6command.PNG)
 4. Masukkan perintah-perintah apa saja yang ingin ditambahkan beserta deskripsi perintahnya sesuai format pada gambar dibawah ini.
-   **Keterangan:** _command_ harus huruf kecil semua & tidak ada spasi.
+   **NB :** _command_ harus huruf kecil semua & tidak ada spasi.
    ![Screenshot 8](/images/8command.PNG)
 5. Ketika berhasil maka akan muncul balasan seperti gambar dibawah ini.
    ![Screenshot 9](/images/9command.PNG)
 6. _Restart_ aplikasi Telegram Anda lalu buka bot Telegram yang telah Anda atur perintahnya
 
-## 
+#### _IoT Configuration_
+
+1. Install [Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/) pada sd card untuk Raspberry pi.
+2. Masukkan token untuk bot yang akan digunakan ke script API telegram.
+3. ```
+   ...
+   def main():
+       # Create the EventHandler and pass it your bot's token.
+       updater = Updater("458534210:AAHOeYPZamMU9bqH-MV36tOBnKj4FhWuvoo")
+       ...
+   ```
+
+   Buat script menggunakan python untuk mengendalikan servo \(e.g. servobuka.py dan servotutup.py, dengan perubahan sudut yang digunakan untuk pintu garasi 90°\).
+4. Buat script menggunakan python untuk mengendalikan lampu led \(e.g. lampu1nyala.py dan lampu1mati.py\).
+5. Masukkan command yang diinginkan sesuai dengan kebutuhan ke script API Telegram.
+
+### Step 
+
+Sesuaikan _jumper wire _yang dibutuhkan untuk menyambungkan Raspberry pi dengan servo \(_female-female_\) maupun board \(_male-female_\).
+
+
 
 
 
