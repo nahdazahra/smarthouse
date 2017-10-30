@@ -44,7 +44,7 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
 3. Pilih bot yang akan diatur perintahnya.
    ![Screenshot 7](/images/6command.PNG)
 4. Masukkan perintah-perintah apa saja yang ingin ditambahkan beserta deskripsi perintahnya sesuai format pada gambar dibawah ini.
-   **NB :** _command_ harus huruf kecil semua & tidak ada spasi.
+   **NB :** _command_ tidak boleh terdiri dari huruf kapital dan spasi.
    ![Screenshot 8](/images/8command.PNG)
 5. Ketika berhasil maka akan muncul balasan seperti gambar dibawah ini.
    ![Screenshot 9](/images/9command.PNG)
@@ -63,14 +63,11 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
    ```
 
    Buat script menggunakan python untuk mengendalikan servo \(e.g. servobuka.py dan servotutup.py, dengan perubahan sudut yang digunakan untuk pintu garasi 90°\).
+
 4. Buat script menggunakan python untuk mengendalikan lampu led \(e.g. lampu1nyala.py dan lampu1mati.py\).
 5. Masukkan command yang diinginkan sesuai dengan kebutuhan ke script API Telegram.
 
-### Step 
+### Step
 
-Sesuaikan _jumper wire _yang dibutuhkan untuk menyambungkan Raspberry pi dengan servo \(_female-female_\) maupun board \(_male-female_\).
-
-
-
-
+Sesuaikan _jumper wire \_yang dibutuhkan untuk menyambungkan Raspberry pi dengan servo \(\_female-female_\) maupun board \(_male-female_\).
 
