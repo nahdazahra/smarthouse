@@ -68,7 +68,30 @@ Smarthouse \(rumah pintar\) adalah miniatur dari sebuah rumah yang menerapkan Io
 
 5. Masukkan command yang diinginkan sesuai dengan kebutuhan ke script API Telegram.
 
+```
+...
+def main():
+    # Create the EventHandler and pass it your bot's token.
+    updater = Updater("458534210:AAHOeYPZamMU9bqH-MV36tOBnKj4FhWuvoo")
+
+    # Get the dispatcher to register handlers
+    dp = updater.dispatcher
+    #one = os.system('python ./servo.py')
+    # on different commands - answer in Telegram
+    #updater.message.reply_text('Selamat Datang di SmartHouseAJK\n\n/help\n   --> Melihat Panduan Penggunaan')
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("bukagarasi", buka))
+    dp.add_handler(CommandHandler("tutupgarasi", tutup))
+    dp.add_handler(CommandHandler("status", status))
+    dp.add_handler(CommandHandler("matikanlampu1", mati1)) #matikanlampugarasi
+    dp.add_handler(CommandHandler("nyalakanlampu1", nyala1)) #nyalakanlampugarasi
+    ...
+```
+
+
+
 ### Step
 
-Sesuaikan _jumper wire \_yang dibutuhkan untuk menyambungkan Raspberry pi dengan servo \(\_female-female_\) maupun board \(_male-female_\).
+Sesuaikan _jumper wire \_yang dibutuhkan untuk menyambungkan Raspberry pi dengan servo \(\_female-female_\) maupun _beardboard_ \(_male-female_\).
 
